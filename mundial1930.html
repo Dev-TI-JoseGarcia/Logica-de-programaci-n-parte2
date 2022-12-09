@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA Mundiales de Futbol Apartir de 1930</h1>
+<script>
+
+function saltarlinea()
+{
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<br>");
+
+    document.write("<br>");
+}
+
+
+function imprimir(frase)
+{
+
+document.write("<big>"+frase+"</big>");
+saltarlinea();
+
+}
+
+
+
+var año=1930;
+var cont=0;
+
+while(año<2022)
+{
+ if(cont==4)
+ {
+    imprimir ("FIFA Mundial año :"+año);
+    cont=0;
+ }
+año++;
+   cont++; 
+}
+
+</script>
+

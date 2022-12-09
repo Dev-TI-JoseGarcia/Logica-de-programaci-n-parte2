@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA DE LISTA DE INGREDIENTES</h1>
+<button>Lista de Ingredientes</button>
+
+<script>
+
+
+
+
+function guardar()
+{
+    var cont=0;
+    var lista=parseInt(prompt("Ingresar el num- ingredientes"));
+    var insumos= Array [lista];
+
+ while(cont<insumos-length)
+ {
+    var captura=prompt(cont+"Nombre de Ingrediente #");
+    insumos[cont]=captura;
+    cont++;
+ }
+
+}
+
+
+var button=document.querySelector("button");
+button.onclick=guardar;
+</script>
+

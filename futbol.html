@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<h1>CALCULAR PUNTO DE UN EQUIPO DE FUTBOL.</h1>
+<script>
+
+function saltarlinea()
+{
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<br>");
+
+    document.write("<br>");
+}
+
+
+function imprimir(frase)
+{
+
+document.write("<big>"+frase+"</big>");
+saltarlinea();
+
+}
+
+var victorias=prompt("Informe la cantidad de victorias.");
+var empates=prompt("Informe la cantidad de empates.");
+
+puntostotal=parseInt(victorias)*3+parseInt(empates);
+imprimir("El total de puntos del equipó es:"+ puntostotal);
+
+
+</script>
+

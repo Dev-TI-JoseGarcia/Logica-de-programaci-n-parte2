@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA Conducir</h1>
+<script>
+
+function saltarlinea()
+{
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<br>");
+
+    document.write("<br>");
+}
+
+
+function imprimir(frase)
+{
+
+document.write("<big>"+frase+"</big>");
+saltarlinea();
+
+}
+
+var edad=parseInt(prompt("Cuál es tu edad:"));
+var tienelicencia=prompt("Tiene Licencia? Responde S o N");
+
+if(edad>=18 && tienelicencia.toUpperCase()=="S" )
+{
+    imprimir("Puedes conducir");
+}
+else if(edad<18 && tienelicencia.toUpperCase()=="N" )
+{
+    imprimir("No Puedes conducir");
+}
+else if(edad>=18 && tienelicencia.toUpperCase()=="N" )
+{
+    imprimir("No Puedes conducir");
+}
+else
+{
+    imprimir("No Puedes conducir");
+}
+
+</script>
+

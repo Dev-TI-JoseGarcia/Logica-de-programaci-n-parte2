@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA Tablas de Multiplicar </h1>
+<script>
+
+function saltarlinea()
+{
+
+    document.write("<br>");
+        document.write("<br>");
+}
+
+
+function imprimir(frase)
+{
+
+document.write("<big>"+frase+"</big>");
+saltarlinea();
+
+}
+
+var tabla=parseInt(prompt("Ingresar numero de Tabla de Multiplicar"));
+
+var cont=0;
+while(cont<10)
+{
+   cont++; 
+   imprimir(tabla+" * "+cont+" = "+(tabla*cont));
+}
+
+</script>
+

@@ -1,0 +1,64 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA</h1>
+<script>
+
+function saltarlinea()
+{
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<br>");
+
+    document.write("<br>");
+}
+
+
+function imprimir(frase)
+{
+
+document.write("<big>"+frase+"</big>");
+saltarlinea();
+
+}
+
+cont=0;
+function imc(peso, altura,persona)
+{
+var resultado=0;
+var medida=(altura/100);
+resultado=(peso/(medida*medida));
+
+imprimir("Calculo de IMC de "+persona+" es: "+resultado.toFixed(2));
+
+if(resultado<=18.5)
+{
+    imprimir("IMC considerado como  bajo de peso");
+}
+else if(resultado>=18.5 && resultado<=25.0)
+{
+    imprimir("IMC considerado como  Normal");
+}
+else if(resultado>=25.0 && resultado<=30.0)
+{
+    imprimir("IMC considerado como  Sobrepeso");
+}
+else if(resultado>=30.0 && resultado<=40)
+{
+    imprimir("IMC considerado como Obesidad");
+}
+
+
+
+}
+
+var nombre=prompt(" Nombre: ");
+var peso=parseFloat(prompt("Peso :"));
+var altura=parseInt(prompt("Altura:"));
+imc(peso,altura,nombre);
+
+
+
+</script>
+

@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA JUEGO DE ADIVINACIÓN ALEATORIO</h1>
+<script>
+
+function saltarlinea()
+{
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<br>");
+
+    document.write("<br>");
+}
+
+
+function imprimir(frase)
+{
+
+document.write("<big>"+frase+"</big>");
+saltarlinea();
+
+}
+
+var numeropensado=Math.round(Math.random()*10);
+var intento=0;
+var cont=0;
+var numerolanzado=0;
+
+while(cont<3)
+{
+   numerolanzado=parseInt(prompt("Ingresa un número:"));
+
+
+   if(numeropensado==numerolanzado)
+      {
+        
+         alert("Acertado  "+intento);
+         break;
+         intento++;
+        }
+    else 
+    {
+       alert("Usted Erro ");
+     intento++;
+     }
+
+    cont++;
+
+}
+
+if(numeropensado==numerolanzado)
+      {
+        
+         imprimir("Acertado  en el intento "+intento+" el Número pensado:"+numeropensado);
+                
+        }
+    else 
+    {
+          imprimir("Usted erro los "+intento+ "  intentos, el numero pensado era: "+numeropensado);
+     }
+ imprimir("Fin");
+      
+
+</script>
+

@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA JUEGO DE ADIVINACIÓN Aleatorio</h1>
+<script>
+
+function saltarlinea()
+{
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<hr>");
+    document.write("<br>");
+
+    document.write("<br>");
+}
+
+
+function imprimir(frase)
+{
+
+document.write("<big>"+frase+"</big>");
+saltarlinea();
+
+}
+
+
+var sorteo=parseInt(prompt("Ingresar un numero para el sorteo :"));
+var numerolanzado=Math.round(Math.random()*sorteo);
+var numerosorteo=Math.round(Math.random()*sorteo);
+
+if(numerosorteo==numerolanzado)
+{
+    imprimir("Acertado");
+}
+else 
+{
+   
+    if(numerosorteo<numerolanzado)
+    {
+        imprimir("El numero era menor del sorteo ");  
+    }
+    else if(numerosorteo>numerolanzado)
+    {
+        imprimir("El numero era mayor del sorteo "); 
+    }
+}
+
+</script>
+
